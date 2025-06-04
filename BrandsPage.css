@@ -1,0 +1,200 @@
+.brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.brand-card {
+  width: 220px; /* Adjust width as necessary */
+  height: 300px; /* Ensure there's enough space */
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Prevent overflow if content is too big */
+}
+
+.brand-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* Ensure images don't stretch */
+  margin-bottom: 10px;
+}
+
+.brand-card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.brand-card-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+.brands-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Heading Styles */
+.brands-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.2s ease-out;
+  font-family: 'Helvetica', sans-serif;
+}
+
+
+
+
+
+/* Hover effect on the brand card */
+.brand-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brand-card:hover .brand-card-image {
+  transform: scale(1.05);
+}
+
+/* Brand name styling */
+.brand-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 15px 0;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Hover effect on brand name */
+.brand-card:hover h3 {
+  color: #e91e63;
+}
+
+/* Brand description styling (if needed) */
+.brand-card p {
+  font-size: 1rem;
+  color: #777;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.brand-card:hover p {
+  color: #c90a0a;
+}
+
+/* Button styling */
+/* .brand-card-btn {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+
+/* Button hover effect */
+/* .brand-card-btn:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+} */
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .brands-container {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .brands-heading {
+    font-size: 1.5rem;
+  }
+
+  .brand-card {
+    max-width: 90%; /* Make cards take up more space on smaller screens */
+  }
+
+  .brand-card-image {
+    height: auto; /* Allow height to adjust based on image */
+    max-height: 180px; /* Slightly reduce the image height */
+  }
+
+  .brand-card-btn {
+    padding: 8px 16px; /* Adjust button size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .brands-heading {
+    font-size: 1.2rem;
+  }
+
+  .brand-card {
+    max-width: 100%; /* Cards should take full width */
+  }
+
+  .brand-card-btn {
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+

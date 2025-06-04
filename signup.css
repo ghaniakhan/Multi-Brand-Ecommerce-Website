@@ -1,0 +1,74 @@
+/* General Styles */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #66785F; /* Outside color */
+}
+
+.form-container {
+  background-color: #B2C9AD; /* Inside color */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.signup-section h2 {
+  color: #333; /* Neutral dark color for text */
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signup-section p {
+  color: #4F6457; /* Complementary text color */
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Spacing between fields */
+.signup-form .form-control {
+  border: 1px solid #66785F; /* Border matches outside color */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; /* Add gap between fields */
+}
+
+/* Button Styling */
+.signup-form button {
+  background-color: #66785F; /* Button color */
+  color: #FFFFFF; /* White text for contrast */
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signup-form button:hover {
+  background-color: #4F6457; /* Slightly darker hover effect */
+  transform: scale(1.05);
+}
+
+.signin-link {
+  text-align: center;
+  font-size: 14px;
+  color: #4F6457;
+}
+
+.signin-link a {
+  color: #66785F; /* Matches outside color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}

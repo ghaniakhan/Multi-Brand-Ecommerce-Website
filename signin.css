@@ -1,0 +1,117 @@
+/* General Styles */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #66785F; /* Outside color */
+}
+
+.form-container {
+  background-color: #B2C9AD; /* Inside color */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center contents vertically */
+  justify-content: center; /* Center contents horizontally */
+}
+
+/* Sign-In Section */
+.signin-section h2 {
+  color: #333; /* Neutral dark color for text */
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.signin-section p {
+  color: #4F6457; /* Complementary text color */
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Spacing between fields */
+.signin-form .form-control {
+  border: 1px solid #66785F; /* Border matches outside color */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; /* Add gap between fields */
+  text-align: center;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #91AC8F; /* Light green border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(145, 172, 143, 0.5); /* Subtle glow */
+}
+
+/* Button Styling */
+.signin-form button {
+  background-color: #66785F; /* Button color */
+  color: #FFFFFF; /* White text for contrast */
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.signin-form button:hover {
+  background-color: #4F6457; /* Slightly darker hover effect */
+  transform: scale(1.05);
+}
+
+.signin-form button:active {
+  transform: scale(0.98);
+}
+
+/* Error Message Styling */
+.error {
+  color: #dc3545;
+  font-size: 0.875em;
+  margin-top: 0.25rem;
+  animation: error-animation 0.3s ease-out;
+}
+
+/* Error Animation */
+@keyframes error-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Additional Links */
+.signin-link {
+  text-align: center;
+  font-size: 12px; /* Smaller font size */
+  text-decoration: none;
+  color: #4F6457;
+  margin-top: 15px;
+}
+
+.signin-link a {
+  color: #66785F; /* Matches outside color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signin-link a:hover {
+  text-decoration: underline;
+}

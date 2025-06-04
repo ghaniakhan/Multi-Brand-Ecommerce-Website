@@ -1,0 +1,195 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #f0a500;
+}
+
+.logo-img {
+  width: 100px;
+  height: 70px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button, .login-signup-button {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover, .login-signup-button:hover {
+  background-color: #333;
+}
+
+
+.landing-page {
+  position: relative;
+  background-image: url('https://t4.ftcdn.net/jpg/02/32/16/07/360_F_232160763_FuTBWDd981tvYEJFXpFZtolm8l4ct0Nz.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.home-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .cart-icon {
+  position: absolute;
+  right: 20px;
+  
+}
+
+.navbar .cart-img {
+  width: 35px;
+  height: 40px;
+  top: -10px;
+  margin-right: 5px;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #333;
+}
+
+/* Top Selling Section */
+.top-selling {
+  background-color: #333;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.top-selling-products {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.product-card {
+  width: 200px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  margin-top: 800px;
+}
+
+.footer-links a, .footer-social a {
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Cart Icon */
+.cart-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cart-img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.user-section button {
+  background-color: #4CAF50;
+  color: white;
+}

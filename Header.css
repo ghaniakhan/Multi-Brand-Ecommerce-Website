@@ -1,0 +1,74 @@
+/* General Navbar Styling */
+.navbar {
+  background: linear-gradient(to right, #1e3c72, #2a5298); /* Stunning gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: background 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #f1c40f; /* Highlight on hover */
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #f1c40f;
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.navbar-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.shopping-cart-icon {
+  color: #ffffff;
+  transition: transform 0.3s, color 0.3s ease;
+}
+
+.shopping-cart-icon:hover {
+  color: #f1c40f;
+  transform: rotate(10deg) scale(1.2); /* Rotate and zoom on hover */
+}
+
+/* Responsive Navbar Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeInNavbar {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: fadeInNavbar 1s ease-in-out;
+}
